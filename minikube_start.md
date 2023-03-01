@@ -8,6 +8,11 @@ wsl.exe --install Ubuntu-22.04
 
 wsl
 
+# WSL
+
+sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"
+
+cd ~
 
 # Setup tools
 

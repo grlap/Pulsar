@@ -6,7 +6,7 @@ newgrp docker
 
 # Start Minikube
 
-minikube start --cpus=4
+minikube start --cpus=4 --memory=8192
 
 # Create Local Storage
 

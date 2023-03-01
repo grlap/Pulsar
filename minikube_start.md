@@ -13,7 +13,6 @@ wsl
 
 curl https://raw.githubusercontent.com/grlap/Pulsar/main/prerequisites.sh | bash
 
-
 # Start minikube
 
 curl https://raw.githubusercontent.com/grlap/Pulsar/main/setup_minikube.sh | bash

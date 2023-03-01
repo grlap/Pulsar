@@ -1,5 +1,9 @@
 #!/bin/bash -e
 
+# Reload permissions
+
+su - $USER
+
 # Start Minikube
 
 minikube start --cpus=4

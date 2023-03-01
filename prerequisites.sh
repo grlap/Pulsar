@@ -3,15 +3,10 @@
 # Docker
 
 sudo apt update -y
-
 sudo apt install apt-transport-https curl gnupg-agent ca-certificates software-properties-common -y
-
 sudo apt-get install ca-certificates curl gnupg lsb-release -y
-
 sudo mkdir -m 0755 -p /etc/apt/keyrings
-
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-
 sudo mkdir -m 0755 -p /etc/apt/keyrings
 
 echo \
@@ -19,12 +14,10 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
-
 sudo apt-get update
-
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
-
 sudo service docker start
+sudo usermod -aG docker $USER && newgrp docker
 
 # Helm
 
@@ -55,3 +48,7 @@ sudo dpkg -i minikube_latest_amd64.deb
 # Kustomize
 
 curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
+
+# Clone Pulsar Helm Chart Repo
+
+git clone https://github.com/apache/pulsar-helm-chart.git

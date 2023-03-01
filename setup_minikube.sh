@@ -2,7 +2,7 @@
 
 # Reload permissions
 
-su - $USER
+newgrp docker
 
 # Start Minikube
 

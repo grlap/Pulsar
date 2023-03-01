@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 # Start Minikube
 
 minikube start --cpus=4

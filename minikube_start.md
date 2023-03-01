@@ -14,6 +14,9 @@ wsl
 curl https://raw.githubusercontent.com/grlap/Pulsar/main/prerequisites.sh | bash
 
 
+# Start minikube
+
+curl https://github.com/grlap/Pulsar/blob/main/setup_minikube.sh | bash
 
 
 # Docker Verification
